@@ -1,8 +1,8 @@
-// Get user input for weight and height
+// Integrate prompt sync for user input on the command line
 const prompt = require('prompt-sync')();
-
-let weight = parseFloat(prompt("Enter your weight in kilograms:"));
-let height = parseFloat(prompt("Enter your height in meters:"));
+// Get user input for weight and height
+let weight = parseFloat(prompt("Enter your weight in kilograms: "));
+let height = parseFloat(prompt("Enter your height in meters: "));
 
 // Calculate BMI
 let bmi = weight / (height * height);
